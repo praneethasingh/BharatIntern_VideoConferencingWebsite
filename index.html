@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Conferencing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Video Conferencing</h1>
+    </header>
+    <div class="join-form">
+        <h2><br><label for="username">Username:</label></h2>
+        <input type="text" id="username" placeholder="Enter your username"><br><br>
+        
+        <h2><label for="room">Room Number:</label></h2>
+        <input type="text" id="room" placeholder="Enter the room number"><br><br>
+        
+        <button id="joinButton">Join</button>
+    </div>
+    <div class="video-container" style="display: none;">
+        <div class="local-video">
+            <video id="localVideo" autoplay muted></video>
+        </div>
+        <div class="remote-video">
+            <video id="remoteVideo" autoplay></video>
+        </div>
+    </div>
+    <div class="chat-container" style="display: none;">
+        <div class="chat-messages" id="chatMessages">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <input type="text" id="chatInput" placeholder="Type your message">
+        <button id="sendButton">Send</button>
+    </div>
+    <div class="controls" style="display: none;">
+        <button id="startButton">Start Video</button>
+        <button id="stopButton">Stop Video</button>
+        <button id="recordButton">Record</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
